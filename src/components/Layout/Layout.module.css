@@ -1,0 +1,37 @@
+.pageContainer {
+  height: 100vh;
+  width:100vw;
+  display: block;
+  position: relative;
+  
+}
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height:100vh;
+}
+.leftContainer Header {
+  flex: 1;
+}
+
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+  align-items: center;
+  overflow-x: scroll;
+  padding-left: 4vw;
+  
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  width:35%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  right:0;
+}

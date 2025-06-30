@@ -1,0 +1,131 @@
+
+.contactContainer {
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    
+   
+    
+}
+.infoContainer::before {
+  content: "";
+  background: linear-gradient(270deg, #7211ba, #26759d, #309d8f, #6361ce, #7211ba);
+  position: absolute;
+  background-size: 600% 600%;
+  top:-3px;
+  bottom:-3px;
+  right: -3px;
+  left: -3px;
+  animation: gradientShift 6s ease infinite;
+  z-index: -1;
+  border: 3px solid white;
+  border-radius: 8px;
+}
+.infoContainer {
+   position: relative;
+  height: 5vh;
+  width: 100%;
+  border-radius: 8px;
+  background: white; /* or your background */
+  z-index: 0;
+  overflow: visible;
+  font-size: clamp(0.1rem, 1.3rem, 3rem);
+  margin: 1vh 1vw 1vh;
+  display:flex;
+  justify-content: center;
+
+}
+
+.photoContainer {
+    height: 20vh;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profilePhoto {
+    flex-shrink: 1;
+    min-height: 0;
+    min-width:0;
+    width: 20vh;
+
+}
+
+.greetingContainer {
+    height: 10vh;
+    justify-items: center;
+    align-content: center;
+}
+
+.aboutContainer {
+  position: relative;
+  height: auto;;
+  width: 30vw;
+  border-radius: 8px;
+  background: white; /* or your background */
+  z-index: 0;
+  overflow: visible;
+  font-size: clamp(0.1rem, 1rem, 3rem);
+  margin: 1vh 1vw 1vh
+}
+
+.aboutContainer::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 8px;
+  background: linear-gradient(270deg, #7211ba, #26759d, #309d8f, #6361ce, #7211ba);
+  background-size: 600% 600%;
+  animation: gradientShift 6s ease infinite;
+  z-index: -1;
+  border: 3px solid white;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.socialsContainer {
+    display: flex;
+    width:100%;
+    height: 10vh;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+    max-width: 100%;   
+    overflow: visible;
+}
+.socialsContainer NavButton buttonImage {
+  width: 100%;
+  background-color: lightblue;
+  margin: 5px 0;
+  
+}
+.buttonLink {
+  width: 20vw; /* or min-width, max-width, etc. */
+  height: 8vh;
+}
+
+.fullContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

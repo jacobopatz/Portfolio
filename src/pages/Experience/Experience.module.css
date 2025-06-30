@@ -1,0 +1,12 @@
+
+.experienceContainer {
+    height:75vh;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cardWrapper {
+   width:45%;
+    height:100%;
+}

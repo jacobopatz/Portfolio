@@ -1,0 +1,66 @@
+
+.pageContainer {
+    display: flex;
+    flex-direction: row;
+    height:100vh;
+    margin:0;
+    padding: 0;
+}
+.leftContainer, .rightContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.leftContainer {
+   width:60%
+}
+.rightContainer {
+    width:40%;
+     flex-grow: 1;
+     justify-content: center;
+    
+}
+
+.headerContainer, .navContainer {
+    display: flex;
+    flex-direction:column;
+    flex-grow: 1;
+    margin-left: 5vh;
+}
+.headerContainer {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    height: 40vh;
+    flex:1;
+}
+.navContainer {
+   
+   display: flex;
+ 
+  flex:2;
+  justify-content: center;
+   
+   
+}
+.buttonSize {
+    height: 100%;
+   padding: 2rem;
+}
+.buttonRow {
+    display: flex;
+    flex-direction: row;
+   
+    
+}
+.contactCardContainer {
+   height: 85vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
