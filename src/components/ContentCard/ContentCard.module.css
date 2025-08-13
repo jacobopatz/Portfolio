@@ -83,20 +83,21 @@
    
 }
 .descriptionContainer {
-  flex: 1;
+  flex: 2;
   
 }
 .titleContainer {
-  flex:1;
+  flex:2;
   
 }
  .yearsContainer,.titleContainer {
    padding-left: 1rem;
-   flex: 1;
+   flex: 2;
 }
 .linkContainer {
   flex:1;
-  max-width: 40%;
+  max-width: 20vw;
+  
   align-self: center;
   
 }

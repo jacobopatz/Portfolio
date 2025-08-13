@@ -31,20 +31,19 @@ const NavButton = ({ to, buttonText }) => {
 
 export const LinkButton = ({ to, buttonText }) => {
   return (
-    <motion.div className={styles.buttonWrapper}>
+    <motion.div className={`${styles.buttonWrapper} ${styles.linkButtonWrapper}`}>
       <a
         href={to}
-        className={`${styles.buttonWrapper} ${styles.linkButton}`}
+        className={styles.buttonLink} // only one main link for gradient
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div className={styles.buttonLink}></div>
         <img src={buttonImage} className={styles.buttonImage} alt="" />
         <span className={styles.buttonText}>{buttonText}</span>
-        <div className={styles.buttonLink}></div>
       </a>
     </motion.div>
   );
 };
+
 
 export default NavButton;

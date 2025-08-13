@@ -26,7 +26,7 @@ function ContactCard() {
                     <p>
                         Nice to meet you! I recently graduated from San Diego State University with a Bachelors of Science
                         in Computer Science and a minor in Mathematics. I am a driven developer who cannot wait to apply
-                        my skills to my career. I created this website so you could get a better idea who I am and my skills.
+                        my skills to my career. I created this portfolio so you could get a better idea who I am and my skills I will bring to your team.
                     </p>
                 </div>
 

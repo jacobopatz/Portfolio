@@ -1,41 +1,27 @@
-.buttonWrapper {
- 
-  display: inline-block;
-  display: flex;
-  border-radius: 10rem;
-  object-fit: cover;
-   backdrop-filter: blur(10px);
-  
-}
-.buttonText {
-  white-space: nowrap;
-}
-.buttonLink {
-  flex: 1;
+/* Wrapper for LinkButton */
+.linkButtonWrapper {
   position: relative;
   display: inline-block;
+  border-radius: 10rem;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
 
+/* Main clickable link with gradient background */
+.buttonLink {
+  position: relative;
+  display: inline-block;
   text-align: center;
-  
   text-decoration: none;
- 
   border-radius: 2rem;
-  
   overflow: hidden;
   transition: transform 0.3s ease;
   z-index: 0;
-}
-.navButton {
- 
-  background-color: rgba(255, 255, 255, 0.065)
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.linkButton {
-  background-color: rgba(0, 0, 0, 0.065)
-  
-}
-
-/* Glowing animated background layer */
+/* Gradient glow layer */
 .buttonLink::before {
   content: "";
   position: absolute;
@@ -54,38 +40,31 @@
   animation: gradientGlow 6s ease infinite;
 }
 
-/* On hover: reveal glow and scale it up */
+/* Show glow and scale up on hover */
 .buttonLink:hover::before {
   opacity: 1;
   transform: scale(1.1);
 }
-.activeLink .buttonLink::before {
-  opacity: 1;
-}
-.activeLink img {
-  opacity: 0;
-}
 
-
-/* Optional: scale button too for a soft hover zoom */
+/* Optional: scale button slightly on hover */
 .buttonLink:hover {
   transform: scale(1.05);
 }
 
-/* Image stays the same */
+/* Button image */
 .buttonImage {
-  
   width: 100%;
   height: 100%;
   display: block;
   pointer-events: none;
   overflow: hidden;
-   transition: opacity 0.4s ease;
-   object-fit: fill;
-   
+  transition: opacity 0.4s ease;
+  object-fit: fill;
 }
+
+/* Fade image on hover */
 .buttonLink:hover .buttonImage {
-    opacity: 0%;
+  opacity: 0;
 }
 
 /* Centered button text */
