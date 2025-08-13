@@ -1,24 +1,24 @@
 import { style } from "motion/react";
 import styles from "./ContentCard.module.css";
 import { Link, useLocation } from 'react-router-dom';
-
-const ContentCard = ({ image, title, university, years, description, coursework }) => {
+import { LinkButton } from "../NavButton/NavButton";
+const ContentCard = ({ image, title, university, years, description, link }) => {
     const location = useLocation();
     return (
         <div className={styles.cardContainer}>
-            
-                <div className={styles.imageContainer}>
 
-                    <img src={image} alt={'SDSU hepnerhall'} />
+            <div className={styles.imageContainer}>
 
-                </div>
-               <div className={styles.backgroundContainer}></div>
-               <div className={styles.textContainer} >
+                <img src={image} alt={'SDSU hepnerhall'} />
+
+            </div>
+            <div className={styles.backgroundContainer}></div>
+            <div className={styles.textContainer} >
                 <div className={styles.titleContainer}>
                     <h1>{title}</h1>
                     <div className={styles.universityContainer}>
-                        {((location.pathname) =='/education') && ( <h2>Minor in Mathematics</h2>)}
-                       
+                        {((location.pathname) == '/education') && (<h2>Minor in Mathematics</h2>)}
+
                         <h2>{university}</h2>
                     </div>
                 </div>
@@ -29,11 +29,15 @@ const ContentCard = ({ image, title, university, years, description, coursework 
                 <div className={styles.descriptionContainer}>
                     <p>{description}</p>
                 </div>
-                <div className={styles.courseworkContainer}>
-                    <p>{coursework}</p>
+                <div className={styles.linkContainer}>
+                     <LinkButton
+                          to={link.href}
+                          buttonText={link.label}
+                        />
+                    
                 </div>
-                </div>
-            
+            </div>
+
 
 
 

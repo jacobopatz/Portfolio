@@ -3,7 +3,7 @@
   scroll-behavior: smooth;
   justify-content: space-between;
   width:100%;
-  height:55vh;
+  height:65vh;
   display: flex;
   overflow-x: auto;
   gap:4rem;
@@ -27,6 +27,7 @@
 }
 .sizingContainer {
   min-width:20vw;
+  height:100%;
 }
 .whiteSpace {
   height:100px;

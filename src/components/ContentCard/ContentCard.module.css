@@ -71,10 +71,32 @@
   );
 }
 .textContainer {
-    height: 100%;
-    width:100%;
+    max-height: 100%;
+    max-width:100%;
     position:absolute;
     z-index: 2;
-    top:25vh;
-    padding-left: 1rem;
+   
+    bottom:0;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+   
+}
+.descriptionContainer {
+  flex: 1;
+  
+}
+.titleContainer {
+  flex:1;
+  
+}
+ .yearsContainer,.titleContainer {
+   padding-left: 1rem;
+   flex: 1;
+}
+.linkContainer {
+  flex:1;
+  max-width: 40%;
+  align-self: center;
+  
 }

@@ -7,10 +7,10 @@ export const EduData =
     years: 'August 2021 - May 2025', 
     description: 'During my time at San Diego State University, I earned a bachelors degree in Computer ' +
   'science and a minor in Mathematics. Where I built a strong foundation in programming and software development'+
-  'I gained hands on experience through many labs, ground projects (see projects page), and individual coding assignments'+
-    'This education provided me with the tools to think critically, learn quickly, and contribute meaningfully to software development teams',
+  ' I gained hands on experience through many labs, ground projects (see projects page), and individual coding assignments.'+
+    ' This education provided me with the tools to think critically, learn quickly, and contribute meaningfully to software development teams.',
 
-    coursework:"neural networks, calculus, advanced progrannubg, intro to artificial intelligence, "
+    link: { href: "https://catalog.sdsu.edu/preview_program.php?catoid=11&poid=10725&returnto=909", label: "SDSU Degree Requirements" },
   }
   // Add more projects...
 ;

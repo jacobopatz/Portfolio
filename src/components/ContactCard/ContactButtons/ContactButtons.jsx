@@ -4,6 +4,7 @@ import styles from './ContactButtons.module.css';
 import LinkedIn from './linkedInIcon.png';
 import EmailIcon from './EmailIcon.png';
 import PhoneIcon from './PhoneIcon.png';
+import GitHubIcon from './GitHubIcon.png'
 
 const ContactButtons =({setShowDiv})=>  {
     return (
@@ -19,6 +20,18 @@ const ContactButtons =({setShowDiv})=>  {
                     <img
                     src={ LinkedIn}
                     alt="LinkedIn"
+                    />
+                </a>
+                {/* GitHub */}
+                <a
+                    
+                    href="https://github.com/jacobopatz/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                    src={GitHubIcon}
+                    alt="Link to my GitHub"
                     />
                 </a>
            
@@ -53,4 +66,5 @@ const ContactButtons =({setShowDiv})=>  {
         
     );
 };
+
 export default ContactButtons;

@@ -1,35 +1,35 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import styles from './ProjectCard.module.css';
-import { motion } from "motion/react";
-import NavButton from '../NavButton/NavButton';
-
-
-const ProjectCard = ({ title, date, description, image, link }) => {
-    return (
-        <div className={styles.ProjectCardContainer} >
-            <div className={styles.imageContainer}>
-                <img src={image} />
-                
-            </div>
-            <div className={styles.backgroundContainer}>
-                
-                <div className={styles.projectTitle}>
-                    <p>{title}</p>
-                </div>
-                <div className={styles.projectDate}>
-                    <p>{date}</p>
-                </div>
-                <div className={styles.projectDescription}>
-                    <p>{description}</p>
-                </div>
-
-                <div className={styles.projectLink}>
-                    <NavButton to={link} buttonText={"to project"}></NavButton>
-                </div>
-            </div>
-
+import { LinkButton } from '../NavButton/NavButton';
+const ProjectCard = ({ title, date, description, image, links = [] }) => {
+  return (
+    <div className={styles.ProjectCardContainer}>
+      <div className={styles.imageContainer}>
+        <img src={image} />
+      </div>
+      <div className={styles.backgroundContainer}>
+        <div className={styles.projectTitle}>
+          <p>{title}</p>
         </div>
-    );
+        <div className={styles.projectDate}>
+          <p>{date}</p>
+        </div>
+        <div className={styles.projectDescription}>
+          <p>{description}</p>
+        </div>
+
+       <div className={styles.projectLink}>
+        <div className={styles.buttonWrapper}>
+  {links.slice(0, 2).map((link, index) => (
+    <LinkButton
+      key={index}
+      to={link.href}
+      buttonText={link.label}
+    />
+  ))}
+  </div>
+</div>
+      </div>
+    </div>
+  );
 };
 export default ProjectCard;

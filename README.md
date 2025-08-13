@@ -4,13 +4,13 @@
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
-Experience the portfolio live at: **[https://www.jacobopatzportfolio.com](https://www.jacobopatzportfolio.com)** (Placeholder URL)
+Experience the portfolio live at: **[https://portfolio-xi-peach-85.vercel.app/](https://portfolio-xi-peach-85.vercel.app/)** 
 
 ---
 
-## ✨ About The Project
+## About The Project
 
 This portfolio site serves as a comprehensive digital resume, providing an in-depth look at my professional journey and technical capabilities. It's designed to offer recruiters and collaborators a clear overview of my skills, experience, and contributions to various projects.
 
@@ -22,7 +22,7 @@ This portfolio site serves as a comprehensive digital resume, providing an in-de
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **React:** A JavaScript library for building user interfaces, enabling a modular and efficient development process.
 * **Framer Motion:** A production-ready motion library for React, used to implement smooth and engaging animations and transitions.
@@ -32,28 +32,23 @@ This portfolio site serves as a comprehensive digital resume, providing an in-de
 
 ---
 
-## 🎨 Design & User Experience
+## Design & User Experience
 
-Leveraging **Framer Motion**, the portfolio site provides a highly engaging and intuitive user experience with smooth transitions and interactive elements. The site is built with **modular component design** principles, ensuring maintainability, scalability, and reusability of UI elements across the application. This approach contributes to a clean codebase and a consistent user interface.
+Leveraging **Framer Motion**, the portfolio site provides an intuitive user experience with smooth transitions and interactive elements. The site is built with **modular component design** principles, ensuring maintainability, scalability, and reusability of UI elements across the application. This approach contributes to a clean codebase and a consistent user interface.
 
 ---
 
-## 🖥️ Viewing The Project
+## Viewing The Project
 
 As this is a fully hosted portfolio site, there is no need for local installation. Simply visit the live demo link above to explore my work. If you wish to review the codebase, you can find it directly on this GitHub repository.
 
 ---
 
-## 📞 Contact
+## Contact
 
 Feel free to reach out to me!
 
-* **GitHub:** [https://github.com/YourGitHubUsername](https://github.com/YourGitHubUsername) (Placeholder)
-* **LinkedIn:** [https://www.linkedin.com/in/your-linkedin-profile](https://www.linkedin.com/in/your-linkedin-profile) (Placeholder)
-* **Email:** [your.email@example.com](mailto:your.email@example.com) (Placeholder)
+* **GitHub:** [https://github.com/jacobopatz](https://github.com/jacobopatz)
+* **LinkedIn:** [https://www.linkedin.com/in/jacob-opatz-20761a215/](https://www.linkedin.com/in/jacob-opatz-20761a215/) 
+* **Email:** [jacobopatz@gmail.com](mailto:jacobopatz@gmail.com) 
 
----
-
-## 📄 License
-
-This project is open-source and available under the MIT License.

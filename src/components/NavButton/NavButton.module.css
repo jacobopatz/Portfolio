@@ -2,6 +2,13 @@
  
   display: inline-block;
   display: flex;
+  border-radius: 10rem;
+  object-fit: cover;
+   backdrop-filter: blur(10px);
+  
+}
+.buttonText {
+  white-space: nowrap;
 }
 .buttonLink {
   flex: 1;
@@ -9,13 +16,23 @@
   display: inline-block;
 
   text-align: center;
+  
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.05);
+ 
   border-radius: 2rem;
-  backdrop-filter: blur(8px);
+  
   overflow: hidden;
   transition: transform 0.3s ease;
   z-index: 0;
+}
+.navButton {
+ 
+  background-color: rgba(255, 255, 255, 0.065)
+}
+
+.linkButton {
+  background-color: rgba(0, 0, 0, 0.065)
+  
 }
 
 /* Glowing animated background layer */

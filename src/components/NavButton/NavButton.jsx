@@ -13,7 +13,7 @@ const NavButton = ({ to, buttonText }) => {
       layout
       layoutId={buttonText}
       transition={{ duration: 0.7, ease: "easeInOut" }}
-      className={styles.buttonWrapper}
+      className={`${styles.buttonWrapper} ${styles.navButton}`}
     >
       <Link to={to} className={styles.buttonLink}>
         <img src={buttonImage} className={styles.buttonImage} />
@@ -26,6 +26,24 @@ const NavButton = ({ to, buttonText }) => {
     <div className={styles.activeLink}>{content}</div>
   ) : (
     content
+  );
+};
+
+export const LinkButton = ({ to, buttonText }) => {
+  return (
+    <motion.div className={styles.buttonWrapper}>
+      <a
+        href={to}
+        className={`${styles.buttonWrapper} ${styles.linkButton}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className={styles.buttonLink}></div>
+        <img src={buttonImage} className={styles.buttonImage} alt="" />
+        <span className={styles.buttonText}>{buttonText}</span>
+        <div className={styles.buttonLink}></div>
+      </a>
+    </motion.div>
   );
 };
 
